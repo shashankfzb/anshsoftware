@@ -1,0 +1,347 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chauhan Techsolves</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #07111f;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      background: rgba(0,0,0,0.4);
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+    }
+
+    header h1 {
+      color: #42d4ff;
+      font-size: 28px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #42d4ff;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 8%;
+      background: linear-gradient(135deg, #07111f, #0f2747);
+    }
+
+    .hero-content h2 {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    .hero-content span {
+      color: #42d4ff;
+    }
+
+    .hero-content p {
+      max-width: 750px;
+      margin: auto;
+      color: #d0d0d0;
+      font-size: 18px;
+      margin-bottom: 35px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 35px;
+      background: #42d4ff;
+      color: #07111f;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: white;
+      transform: translateY(-3px);
+    }
+
+    section {
+      padding: 80px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      color: #42d4ff;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #10233d;
+      padding: 30px;
+      border-radius: 15px;
+      transition: 0.3s;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: #42d4ff;
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: #42d4ff;
+    }
+
+    .about {
+      text-align: center;
+      max-width: 900px;
+      margin: auto;
+      color: #d7d7d7;
+      font-size: 18px;
+    }
+
+    .contact-box {
+      background: #10233d;
+      padding: 40px;
+      border-radius: 15px;
+      max-width: 700px;
+      margin: auto;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .contact-box h3 {
+      color: #42d4ff;
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+
+    .contact-box p {
+      margin-bottom: 12px;
+      color: #d6d6d6;
+    }
+
+    .contact-box a {
+      color: #42d4ff;
+      text-decoration: none;
+    }
+
+    .privacy {
+      background: #0d1d33;
+      border-radius: 15px;
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .privacy h3 {
+      color: #42d4ff;
+      margin-top: 25px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      color: #a9a9a9;
+    }
+
+    @media(max-width:768px) {
+      .hero-content h2 {
+        font-size: 40px;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Chauhan Techsolves</h1>
+
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#privacy">Privacy Policy</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Professional <span>Web & Android</span> Solutions</h2>
+
+      <p>
+        Chauhan Techsolves provides modern software solutions including custom websites,
+        Android application development, UI/UX design, cloud integrations, and scalable
+        business systems for startups and enterprises.
+      </p>
+
+      <a href="#contact" class="btn">Start Your Project</a>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="section-title">
+      <h2>Our Services</h2>
+      <p>High-quality digital solutions tailored for your business.</p>
+    </div>
+
+    <div class="services">
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>
+          Responsive and scalable websites with modern UI and optimized performance.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Android Development</h3>
+        <p>
+          Custom Android applications with secure backend integrations and smooth UX.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>UI/UX Design</h3>
+        <p>
+          Attractive and user-friendly interfaces focused on engagement and conversion.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Business Automation</h3>
+        <p>
+          Software systems that streamline workflows and improve operational efficiency.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-title">
+      <h2>About Us</h2>
+    </div>
+
+    <div class="about">
+      <p>
+        Chauhan Techsolves is a software solutions company focused on delivering premium
+        digital experiences through innovative web platforms and Android applications.
+        We help businesses transform ideas into reliable and scalable technology products.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-title">
+      <h2>Contact Us</h2>
+    </div>
+
+    <div class="contact-box">
+      <h3>Let’s Build Something Great</h3>
+
+      <p><strong>POC:</strong> Harsh Pandey</p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:Harsh.pandey0144@gmail.com">
+          Harsh.pandey0144@gmail.com
+        </a>
+      </p>
+
+      <br>
+
+      <a href="mailto:Harsh.pandey0144@gmail.com" class="btn">
+        Contact Now
+      </a>
+    </div>
+  </section>
+
+  <section id="privacy">
+    <div class="section-title">
+      <h2>Privacy Policy</h2>
+    </div>
+
+    <div class="privacy">
+      <h3>Information Collection</h3>
+      <p>
+        We may collect contact information such as names, email addresses, and project
+        details when users contact us.
+      </p>
+
+      <h3>Use of Information</h3>
+      <p>
+        Information shared with Chauhan Techsolves is used solely for communication,
+        project management, and service improvement.
+      </p>
+
+      <h3>Data Protection</h3>
+      <p>
+        We implement reasonable security measures to protect user information from
+        unauthorized access or misuse.
+      </p>
+
+      <h3>Third-Party Services</h3>
+      <p>
+        We do not sell or share personal information with third parties except where
+        required for service delivery or legal compliance.
+      </p>
+
+      <h3>Contact</h3>
+      <p>
+        For privacy-related queries, contact:
+        <a href="mailto:Harsh.pandey0144@gmail.com">
+          Harsh.pandey0144@gmail.com
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Chauhan Techsolves. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
+```
